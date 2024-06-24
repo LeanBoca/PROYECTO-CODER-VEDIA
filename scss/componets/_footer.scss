@@ -1,0 +1,28 @@
+/*FOOTER-MOBILE************************************************/
+footer {
+    @extend %centered-flex-column;
+    @include padding-responsive(1rem, 1.5rem, 2rem);
+    background-color: rgb(200, 159, 238);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    @include responsive-text(12px, 16px, 20px);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    a {
+        color: inherit;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

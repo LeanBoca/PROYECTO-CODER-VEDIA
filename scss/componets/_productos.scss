@@ -1,0 +1,30 @@
+/*PRODUCTOS-MOBILE************************************************/
+.portada-productos {
+    @extend %centered-flex-column;
+    @include padding-responsive(2rem, 2.5rem, 3rem);
+    text-align: center;
+    background-color: rgb(200, 159, 238);
+}
+
+.portada-productos-titulo {
+    @include responsive-text(20px, 30px, 40px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.portada-productos-parrafo {
+    @include responsive-text(12px, 16px, 26px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.portada-productos div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.portada-productos img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

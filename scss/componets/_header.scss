@@ -1,0 +1,40 @@
+/*HEADER-MOBILE************************************************/
+header {
+    @extend %centered-flex-column;
+    @include padding-responsive(1rem, 1.5rem, 2rem);
+    background-color: rgb(200, 159, 238);
+}
+
+.titulo1 {
+    @include responsive-text(30px, 40px, 60px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.barra {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*HEADER-TABLET*/
+@media (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .barra {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+/*HEADER-DESKTOP*/
+@media (min-width: 1200px) {
+    header {
+        grid-template-rows: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,32 @@
+/*SERVICIOS - MOBILE************************************************/
+.portada-servicios {
+    background-color: aquamarine;
+    @include padding-responsive(2rem, 2.5rem, 3rem);
+}
+
+.portada-servicios-imagenes {
+    @extend %centered-flex-column;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+        padding: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 40px;
+        gap: 2rem;
+    }
+}
+
+.portada-servicios-titulo {
+    @include responsive-text(20px, 30px, 40px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+
+.portada-servicios-parrafo {
+    @include responsive-text(12px, 16px, 26px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
