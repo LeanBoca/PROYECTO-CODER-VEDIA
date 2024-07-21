@@ -17,6 +17,12 @@ img {
   max-width: 100%;
 }
 
+.titulo1:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra negra con ligera transparencia */
+  transition: text-shadow 0.2s ease; /* Anima la sombra suavemente */
+}
+
+
 footer,
 .form-contacto,
 .portada-contacto,
@@ -31,6 +37,13 @@ header {
 
 }
 
+.portada-servicios-imagenes img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de las imágenes en un 10% */
+  transition: transform 0.2s ease; /* Animación suave para la transición */
+}
+
+
+
 .portada-servicios-imagenes:hover {
 
   rotate: 360deg;
@@ -39,7 +52,6 @@ header {
   transition-property: all;
   transition-delay: 2s;
   transition-timing-function: ease;
-
 
 }
 
